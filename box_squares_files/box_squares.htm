@@ -1,0 +1,54 @@
+
+<!-- saved from url=(0053)file:///Users/juliestringham/Desktop/box_squares.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><doctype html="">
+
+
+	<script src="./box_squares_files/jquery.min.js"></script>
+
+
+<script>
+// $(function run(){
+// 	$('#slider').slideUp(1000)
+// 	$('#slider').slideDown(1000, run);
+// })
+
+$(document).ready(function(){
+	$("#container").hover(function(){
+		("#slider").animate({height:'toggle'}, 350);
+	});
+});
+</script>
+
+<style>
+#button_div {
+	position: fixed;
+	top: 50px;
+	left: 250px;
+	height: 25px;
+	width: 100px;
+	background-color: orange;
+}
+
+#container {
+	position: fixed;
+	left: 200px;
+	top: 100px;
+	width: 400px;
+	height: 200px;
+	background-color: #ddd;
+	display:block;
+}
+#slider {
+	width: 100%;
+	height: 150px;
+	background-color: green;
+	opacity: .5;
+	display: none;
+}
+</style>
+
+
+	<div id="container"> <div id="slider"></div> <div>
+
+
+</div></div></doctype></body></html>
